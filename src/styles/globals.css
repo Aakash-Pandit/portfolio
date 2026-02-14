@@ -247,6 +247,69 @@ a {
   padding-bottom: 72px;
 }
 
+/* Projects slider */
+.projects-slider-wrap {
+  position: relative;
+  margin: 0 -24px;
+  padding: 0 48px;
+}
+.projects-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 4px 0 16px;
+}
+.projects-slider::-webkit-scrollbar {
+  display: none;
+}
+.projects-slide {
+  flex: 0 0 320px;
+  width: 320px;
+  min-height: 280px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+}
+.projects-slide.card {
+  height: 100%;
+  min-height: 280px;
+}
+.projects-slide .link {
+  margin-top: auto;
+}
+.projects-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--card);
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+.projects-nav:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+.projects-nav-prev {
+  left: 0;
+}
+.projects-nav-next {
+  right: 0;
+}
+
 @media (max-width: 900px) {
   .grid-2 {
     grid-template-columns: 1fr;
@@ -266,6 +329,20 @@ a {
 @media (max-width: 640px) {
   .page {
     padding: 0 18px 72px;
+  }
+
+  .projects-slider-wrap {
+    margin: 0 -18px;
+    padding: 0 40px;
+  }
+
+  .projects-slide {
+    flex: 0 0 280px;
+    width: 280px;
+    min-height: 260px;
+  }
+  .projects-slide.card {
+    min-height: 260px;
   }
 
   .hero {
