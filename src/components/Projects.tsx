@@ -3,6 +3,7 @@ import React from "react";
 const LINKS = {
   reetro: "https://github.com/Aakash-Pandit/reetro-application",
   patientAI: "https://github.com/Aakash-Pandit/patient-appointment-using-AI",
+  policyAI: "https://github.com/Aakash-Pandit/PolicyAgent",
 };
 
 const projects = [
@@ -17,6 +18,12 @@ const projects = [
     description:
       "FastAPI + PostgreSQL app with AI-assisted appointment booking using Cohere tools. Dockerized and ready for deployment.",
     link: LINKS.patientAI,
+  },
+  {
+    title: "Policy AI Agent",
+    description:
+      "A Python FastAPI application that combines organizations, users, leave requests, policies, and an AI chat assistant powered by Cohere with tool/function calling. The AI answers questions using real data from the database and from RAG (Retrieval-Augmented Generation) over policy documents.",
+    link: LINKS.policyAI,
   },
 ];
 
