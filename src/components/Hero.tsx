@@ -12,15 +12,15 @@ export default function Hero() {
   return (
     <section className="hero hero-grid">
       <div>
-        <p className="muted">Software Engineer (Backend-Focused)</p>
+        <p className="muted">Software Developer</p>
         <h1 className="hero-title">
-          Hi, I'm <span>Aakash</span>
+          Hey, I'm <span>Aakash</span> 👋
         </h1>
         <p className="hero-subtitle">
-          I build reliable backend systems and AI-powered products with
-          Python, Go, FastAPI, Django, PostgreSQL, Redis, and LLM tooling.
-          I am always ready to learn new technologies and level up my
-          craft with every project.
+          I build reliable backend systems and AI-powered products with{" "}
+          <strong>Python</strong>, <strong>Go</strong>, <strong>FastAPI</strong>,{" "}
+          <strong>Django</strong>, <strong>PostgreSQL</strong>, <strong>Redis</strong>, and{" "}
+          <strong>LLM tooling</strong>. Always learning and leveling up with every project.
         </p>
         <div className="hero-actions">
           <a className="btn btn-primary" href={LINKS.projects}>
