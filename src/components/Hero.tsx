@@ -5,7 +5,7 @@ const LINKS = {
   projects: "#projects",
   contact: "#contact",
   resume:
-    "https://drive.google.com/file/d/1z22s7m3EmK2rir3uU-Ub1D0Mir8uChsI/view?usp=drive_link",
+    "https://drive.google.com/file/d/1gd9E6cDxc9qy86b9URLzafImmPCVBVDT/view?usp=drive_link",
 };
 
 export default function Hero() {
