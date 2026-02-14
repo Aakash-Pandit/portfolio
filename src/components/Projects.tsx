@@ -16,7 +16,7 @@ const projects = [
   {
     title: "AI Agent: Patient Appointment Booking System",
     description:
-      "FastAPI + PostgreSQL app with AI-assisted appointment booking using Cohere tools. Dockerized and ready for deployment.",
+      "This project is a Python-based (FastAPI) patient appointment system that combines standard CRUD flows for doctors, patients, and appointments with an AI-driven Q&A assistant to help users understand and manage scheduling. It can be described as a lightweight AI agent (tool-calling) app.",
     link: LINKS.patientAI,
   },
   {
