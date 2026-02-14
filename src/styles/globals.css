@@ -48,12 +48,34 @@ a {
   padding: 0 24px 96px;
 }
 
-.topbar {
-  display: flex;
-  justify-content: flex-end;
-  padding: 24px 0 0;
+/* Site header & nav (mangeshbide-style) */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
 }
-
+.site-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.nav-link {
+  color: var(--muted);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.nav-link:hover {
+  color: var(--accent);
+}
+.site-nav .theme-toggle {
+  margin-left: auto;
+}
 .theme-toggle {
   border: 2px solid var(--accent);
   background: var(--card);
@@ -64,7 +86,6 @@ a {
   cursor: pointer;
   transition: 0.2s ease;
 }
-
 .theme-toggle:hover {
   border-color: var(--accent);
   color: var(--accent);
@@ -72,6 +93,7 @@ a {
 
 .section {
   padding: 72px 0 0;
+  scroll-margin-top: 20px;
 }
 
 .section-title {
@@ -82,6 +104,135 @@ a {
 }
 
 .muted {
+  color: var(--muted);
+}
+
+.section-intro {
+  margin-bottom: 24px;
+  max-width: 560px;
+}
+
+/* Quote block */
+.quote-section {
+  padding-top: 48px;
+}
+.site-quote {
+  border-left: 4px solid var(--accent);
+  padding-left: 20px;
+  margin: 0;
+}
+.site-quote p {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+.site-quote footer {
+  font-size: 0.95rem;
+}
+
+/* What I Do cards */
+.what-i-do-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.what-i-do-card {
+  text-align: center;
+  align-items: center;
+}
+.what-i-do-emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 12px;
+}
+.what-i-do-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Start Exploring cards */
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.explore-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.explore-card:hover {
+  border-color: var(--accent);
+}
+.explore-emoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+.explore-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.explore-cta {
+  margin-top: 12px;
+  display: inline-block;
+}
+
+/* About list */
+.about-lead {
+  max-width: 640px;
+}
+.about-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 24px 0 12px;
+}
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.about-list li {
+  margin-bottom: 8px;
+  padding-left: 0;
+}
+.about-funfact {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 72px;
+  padding: 32px 0 48px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.footer-connect {
+  margin-bottom: 20px;
+}
+.footer-title {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-icon {
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+.footer-icon:hover {
+  color: var(--accent);
+}
+.footer-built {
+  font-size: 0.9rem;
   color: var(--muted);
 }
 
@@ -315,6 +466,14 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .what-i-do-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
   }
@@ -331,18 +490,9 @@ a {
     padding: 0 18px 72px;
   }
 
-  .projects-slider-wrap {
-    margin: 0 -18px;
-    padding: 0 40px;
-  }
-
-  .projects-slide {
-    flex: 0 0 280px;
-    width: 280px;
-    min-height: 260px;
-  }
-  .projects-slide.card {
-    min-height: 260px;
+  .site-nav {
+    padding: 12px 18px;
+    gap: 16px;
   }
 
   .hero {
