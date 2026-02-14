@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Quote from "../components/Quote";
 import Skills from "../components/Skills";
+import WhatIDo from "../components/WhatIDo";
+import Nav from "../components/Nav";
 
 export default function Home() {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
@@ -29,17 +33,17 @@ export default function Home() {
   };
 
   return (
-    <main className="page">
-      <header className="topbar">
-        <button className="theme-toggle" onClick={toggleTheme} type="button">
-          {theme === "dark" ? "Light" : "Dark"}
-        </button>
-      </header>
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-    </main>
+    <>
+      <Nav theme={theme} onThemeToggle={toggleTheme} />
+      <main className="page">
+        <Hero />
+        <WhatIDo />
+        <Quote />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 }
