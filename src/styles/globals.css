@@ -93,7 +93,7 @@ a {
 
 .section {
   padding: 72px 0 0;
-  scroll-margin-top: 72px;
+  scroll-margin-top: 20px;
 }
 
 .section-title {

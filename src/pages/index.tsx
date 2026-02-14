@@ -40,6 +40,7 @@ export default function Home() {
         <WhatIDo />
         <Quote />
         <About />
+        <Skills />
         <Projects />
         <Contact />
         <Footer />

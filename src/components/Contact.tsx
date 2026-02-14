@@ -13,7 +13,7 @@ export default function Contact() {
     <section className="section footer-space" id="contact">
       <h2 className="section-title">Contact</h2>
       <p className="muted" style={{ marginTop: "8px" }}>
-        <p>Stay updated · Find me</p>
+        <p className="muted">Stay updated · Find me</p>
         Want to work together or just say hi? I am open to freelance
         projects, backend roles, and collaboration.
       </p>
