@@ -4,6 +4,7 @@ const LINKS = {
   reetro: "https://github.com/Aakash-Pandit/reetro-application",
   patientAI: "https://github.com/Aakash-Pandit/patient-appointment-using-AI",
   policyAI: "https://github.com/Aakash-Pandit/PolicyAgent",
+  nutrilens: "https://github.com/Aakash-Pandit/nutrilens-api"
 };
 
 const projects = [
@@ -25,6 +26,11 @@ const projects = [
       "A Python FastAPI application that combines organizations, users, leave requests, policies, and an AI chat assistant powered by Cohere with tool/function calling. The AI answers questions using real data from the database and from RAG (Retrieval-Augmented Generation) over policy documents.",
     link: LINKS.policyAI,
   },
+  {
+    title: "NutriLens",
+    description: "Nutrilens AI is an API that takes food packaging ingredient information (text or image), runs it through AI models, and returns a human-readable explanation of what is inside along with an opinionated health assessment",
+    link: LINKS.nutrilens,
+  }
 ];
 
 export default function Projects() {
