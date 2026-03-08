@@ -1,10 +1,12 @@
+import { describe } from "node:test";
 import React from "react";
 
 const LINKS = {
   reetro: "https://github.com/Aakash-Pandit/reetro-application",
   patientAI: "https://github.com/Aakash-Pandit/patient-appointment-using-AI",
   policyAI: "https://github.com/Aakash-Pandit/PolicyAgent",
-  nutrilens: "https://github.com/Aakash-Pandit/nutrilens-api"
+  nutrilens: "https://github.com/Aakash-Pandit/nutrilens-api",
+  book_recommendation: "https://github.com/Aakash-Pandit/book-recommendation",
 };
 
 const projects = [
@@ -30,6 +32,11 @@ const projects = [
     title: "NutriLens",
     description: "Nutrilens AI is an API that takes food packaging ingredient information (text or image), runs it through AI models, and returns a human-readable explanation of what is inside along with an opinionated health assessment",
     link: LINKS.nutrilens,
+  },
+  {
+    title: "Book Recommendation",
+    description: "This is a book recommendation REST API built with Flask that serves two types of recommendations: a popularity-based list (top-rated books) and collaborative filtering (similar books based on user rating patterns). The ML models are pre-trained in a Jupyter notebook using a Books/Ratings/Users dataset and serialized as pickle files, which the API loads at runtime. The app is fully containerized with Docker and exposes endpoints at port 5000.",
+    link: LINKS.book_recommendation,
   }
 ];
 
