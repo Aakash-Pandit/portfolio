@@ -7,6 +7,7 @@ const LINKS = {
   policyAI: "https://github.com/Aakash-Pandit/PolicyAgent",
   nutrilens: "https://github.com/Aakash-Pandit/nutrilens-api",
   book_recommendation: "https://github.com/Aakash-Pandit/book-recommendation",
+  research_ai_agent: "https://github.com/Aakash-Pandit/Research-AI-Agent"
 };
 
 const projects = [
@@ -37,6 +38,11 @@ const projects = [
     title: "Book Recommendation",
     description: "This is a book recommendation REST API built with Flask that serves two types of recommendations: a popularity-based list (top-rated books) and collaborative filtering (similar books based on user rating patterns). The ML models are pre-trained in a Jupyter notebook using a Books/Ratings/Users dataset and serialized as pickle files, which the API loads at runtime. The app is fully containerized with Docker and exposes endpoints at port 5000.",
     link: LINKS.book_recommendation,
+  },
+  {
+    title: "Research AI Agent",
+    description: "an autonomous research assistant built with LangGraph, Cohere, FAISS, and Tavily. It searches the live web, retrieves relevant documents from a persistent vector store, and synthesizes a grounded answer using an LLM — all in a single API call. The agent is served via FastAPI and follows an Agentic RAG architecture where each step (search, retrieve, generate) is a node in a stateful graph.",
+    link: LINKS.research_ai_agent,
   }
 ];
 
