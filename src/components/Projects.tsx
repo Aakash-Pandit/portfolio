@@ -41,7 +41,7 @@ const projects = [
   },
   {
     title: "Research AI Agent",
-    description: "an autonomous research assistant built with LangGraph, Cohere, FAISS, and Tavily. It searches the live web, retrieves relevant documents from a persistent vector store, and synthesizes a grounded answer using an LLM — all in a single API call. The agent is served via FastAPI and follows an Agentic RAG architecture where each step (search, retrieve, generate) is a node in a stateful graph.",
+    description: "An autonomous research assistant built with LangGraph, Cohere, FAISS, and Tavily. It searches the live web, retrieves relevant documents from a persistent vector store, and synthesizes a grounded answer using an LLM — all in a single API call. The agent is served via FastAPI and follows an Agentic RAG architecture where each step (search, retrieve, generate) is a node in a stateful graph.",
     link: LINKS.research_ai_agent,
   }
 ];
