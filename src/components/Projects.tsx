@@ -7,7 +7,8 @@ const LINKS = {
   policyAI: "https://github.com/Aakash-Pandit/PolicyAgent",
   nutrilens: "https://github.com/Aakash-Pandit/nutrilens-api",
   book_recommendation: "https://github.com/Aakash-Pandit/book-recommendation",
-  research_ai_agent: "https://github.com/Aakash-Pandit/Research-AI-Agent"
+  research_ai_agent: "https://github.com/Aakash-Pandit/Research-AI-Agent",
+  standup_mcp: "https://github.com/Aakash-Pandit/Standup-MCP-Server"
 };
 
 const projects = [
@@ -43,6 +44,11 @@ const projects = [
     title: "Research AI Agent",
     description: "An autonomous research assistant built with LangGraph, Cohere, FAISS, and Tavily. It searches the live web, retrieves relevant documents from a persistent vector store, and synthesizes a grounded answer using an LLM — all in a single API call. The agent is served via FastAPI and follows an Agentic RAG architecture where each step (search, retrieve, generate) is a node in a stateful graph.",
     link: LINKS.research_ai_agent,
+  },
+  {
+    title: "Standup MCP Server",
+    description: "standup-mcp is an open-source MCP (Model Context Protocol) server that integrates with Claude Code to log daily standups to Notion using plain English. Built with Python, FastMCP, and Cohere's NLP API, it parses natural language messages like 'today I worked on jwt API and dashboard' and automatically appends them as dated bullet lists to a Notion page. It ships with an interactive CLI wizard that handles the full setup — collecting credentials, storing them securely in ~/.zshrc, and generating a credential-free .mcp.json config that safely coexists with other MCP servers. Install it in one command via uv or pipx directly from GitHub, no PyPI publishing required.",
+    link: LINKS.standup_mcp,
   }
 ];
 
@@ -50,14 +56,12 @@ export default function Projects() {
   return (
     <section className="section" id="projects">
       <h2 className="section-title">Projects</h2>
-      <div className="grid grid-2">
+      <div className="table-list">
         {projects.map((project) => (
-          <div key={project.title} className="card">
-            <h3 className="section-title" style={{ fontSize: "20px" }}>
-              {project.title}
-            </h3>
-            <p className="muted">{project.description}</p>
-            <a href={project.link} className="link" target="_blank">
+          <div key={project.title} className="table-row">
+            <h3 className="table-row-title">{project.title}</h3>
+            <p className="table-row-desc">{project.description}</p>
+            <a href={project.link} className="table-row-link" target="_blank" rel="noopener noreferrer">
               View on GitHub →
             </a>
           </div>
