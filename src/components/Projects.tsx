@@ -8,7 +8,9 @@ const LINKS = {
   nutrilens: "https://github.com/Aakash-Pandit/nutrilens-api",
   book_recommendation: "https://github.com/Aakash-Pandit/book-recommendation",
   research_ai_agent: "https://github.com/Aakash-Pandit/Research-AI-Agent",
-  standup_mcp: "https://github.com/Aakash-Pandit/Standup-MCP-Server"
+  standup_mcp: "https://github.com/Aakash-Pandit/Standup-MCP-Server",
+  markdown_generator_mcp: "https://github.com/Aakash-Pandit/markdown-generator-mcp",
+  code_review_bot: "https://github.com/Aakash-Pandit/code-review-bot",
 };
 
 const projects = [
@@ -49,6 +51,16 @@ const projects = [
     title: "Standup MCP Server",
     description: "standup-mcp is an open-source MCP (Model Context Protocol) server that integrates with Claude Code to log daily standups to Notion using plain English. Built with Python, FastMCP, and Cohere's NLP API, it parses natural language messages like 'today I worked on jwt API and dashboard' and automatically appends them as dated bullet lists to a Notion page. It ships with an interactive CLI wizard that handles the full setup — collecting credentials, storing them securely in ~/.zshrc, and generating a credential-free .mcp.json config that safely coexists with other MCP servers. Install it in one command via uv or pipx directly from GitHub, no PyPI publishing required.",
     link: LINKS.standup_mcp,
+  },
+  {
+    title: "Markdown Generator MCP",
+    description: "An open-source Model Context Protocol (MCP) server built in Go designed to enhance the Claude Code CLI experience. By implementing the MCP standard, it allows developers to save their LLM interactions directly to their local filesystem as Markdown or PDF files. The tool features a seamless developer experience with a single-command installation that automatically handles user-scoped MCP registration, ensuring zero manual configuration.",
+    link: LINKS.markdown_generator_mcp,
+  },
+  {
+    title: "Code Review Bot",
+    description: "A self-hosted, full-stack AI code review tool that provides real-time, streaming feedback on bugs, security, and performance. Powered by local LLMs, it ensures complete data privacy while accelerating the code review process.",
+    link: LINKS.code_review_bot,
   }
 ];
 
