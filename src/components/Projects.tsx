@@ -15,7 +15,7 @@ const LINKS = {
 
 const projects = [
   {
-    title: "Reetro Application Test",
+    title: "Reetro Application",
     description:
       "Team retrospectives app to capture feedback, vote on themes, and track action items in real time using Golang, PostgreSQL and Redis. Dockerized and ready for deployment.",
     link: LINKS.reetro,
